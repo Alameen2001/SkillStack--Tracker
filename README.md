@@ -18,9 +18,9 @@ SkillStack is a straightforward and intuitive app created to manage and monitor 
 ## Tech Requirements
 
  **Frontend**: ReactJS – for a fast, modern, and responsive user interface.
-**Backend**: Python with Flask – lightweight yet powerful for building APIs.
-**Database**: SQLite – simple, efficient, and ideal for a project of this scale.
-**AI Integration**: Google Gemini API – the brain behind smart note summaries.
+ **Backend**: Python with Flask – lightweight yet powerful for building APIs.
+ **Database**: SQLite – simple, efficient, and ideal for a project of this scale.
+ **AI Integration**: Google Gemini API – the brain behind smart note summaries.
 
 ---
 
