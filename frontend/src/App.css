@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --background: #2c3e50;
+  --surface: #34495e;
+  --primary: #1abc9c;
+  --success: #27ae60;
+  --danger: #c0392b;
+  --primary-text: #ecf0f1;
+  --secondary-text: #bdc3c7;
+  --border-color: #4a627a;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--primary-text);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+header h1 {
+  font-size: 2.75rem;
+  color: #fff;
+  font-weight: 600;
+}
+header p {
+    color: var(--secondary-text);
+    font-size: 1.1rem;
+}
+
+/* Card Layout */
+.card {
+  background: var(--surface);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+  margin-top: 0;
+  color: #fff;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Input Styles */
+input, select, textarea {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid var(--border-color);
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--primary-text);
+  transition: border-color 0.3s ease;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    /* The line that changed the border color on focus has been removed. */
+}
+
+/* Table Styles */
+.table-wrapper { overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+  vertical-align: middle;
+}
+th {
+  color: var(--secondary-text);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+td small {
+  display: block;
+  color: var(--secondary-text);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+td select {
+    background-color: var(--background);
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+.notes-cell textarea {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: var(--surface);
+}
+
+/* Button Styles */
+.actions-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.actions-group > button {
+    flex-grow: 1; 
+}
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+  grid-column: 1 / -1;
+}
+.btn-primary:hover {
+    background-color: #1fe4b6;
+    box-shadow: 0 4px 15px rgba(26, 188, 156, 0.2);
+    transform: translateY(-2px);
+}
+.btn-secondary {
+  background-color: var(--success);
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 0.8rem;
+}
+.btn-secondary:hover {
+    background-color: #2ecc71;
+}
+.btn-danger {
+    background-color: var(--danger);
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+}
+.btn-danger:hover {
+    background-color: #a8332a;
+}
