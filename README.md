@@ -4,7 +4,7 @@ SkillStack is a straightforward and intuitive app created to manage and monitor 
 
 ---
 
-## What It Does (The Feature List)
+##  Features
 
 * **Add Learning Goal**: Easily add courses, videos, or articles you’re currently working on.
 * **Track Your Progress**: Stay on top of your learning by marking goals as started, in-progress, or completed.
