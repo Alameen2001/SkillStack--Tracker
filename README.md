@@ -1,27 +1,26 @@
-# SkillStack - Learning Tracker
+# SkillStack - Tracker
 
-SkillStack is a simple and clean application designed to organize and track skill-building journeys, making it easier to stay focused, motivated, and consistent over time.
-
-It's a full-stack application, with an AI helper to summarize notes.
+SkillStack is a straightforward and intuitive app created to manage and monitor your skill development journey, helping you stay focused, motivated, and consistent throughout.
 
 ---
 
 ## What It Does (The Feature List)
 
-* **Add Any Learning Goal**: You can add any course, video, or article you're working on.
-* **Track Your Progress**: Keep yourself honest by marking things as `started`, `in-progress`, or that `completed` status.
-* **Keep Notes & Details**: Store notes, track hours spent, and rate difficulty.
-* **Get AI Summaries**: Send notes to Google Gemini AI for a quick one-sentence summary.
-* **Clean Up**: A simple delete button to remove skills you're no longer pursuing.
+* **Add Learning Goal**: Easily add courses, videos, or articles you’re currently working on.
+* **Track Your Progress**: Stay on top of your learning by marking goals as started, in-progress, or completed.
+* **Keep Notes & Details**: Save notes, log hours spent, and rate the difficulty of each skill
+* **Genarate Summary**: Use Google Gemini AI to generate quick, one-sentence summaries of your notes.
+* **Delete**: Remove skills you’re no longer pursuing with a simple delete button.
+* **Dashboard**: Visualize skill growth with interactive insight,including progress tracking,hours spent and category-wise breakdown.
 
 ---
 
-## Tech Stack
+## Tech Requirements
 
-* **Frontend**: ReactJS (To make the UI feel fast and modern)
-* **Backend**: Python with Flask (Lightweight and powerful for the API)
-* **Database**: SQLite (Simple and perfect for a project of this size)
-* **The AI Brain**: Google's Gemini API
+ **Frontend**: ReactJS – for a fast, modern, and responsive user interface.
+**Backend**: Python with Flask – lightweight yet powerful for building APIs.
+**Database**: SQLite – simple, efficient, and ideal for a project of this scale.
+**AI Integration**: Google Gemini API – the brain behind smart note summaries.
 
 ---
 
@@ -29,10 +28,11 @@ It's a full-stack application, with an AI helper to summarize notes.
 
 Here's how to get this running locally.
 
-### Prerequisites:
-* Node.js & npm
-* Python 3 & pip
-* A free Google AI API Key
+### Dependencies:
+* Node.js & npm – for running the frontend
+* Python 3 & pip – for running the backend
+* Google AI API Key – to enable AI-powered note summaries
+
 
 ## Getting the Backend and Frontend Running
 ```bash
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 # You'll need to create a .env file in this folder
 # and add your Google API key inside it like this:
-# GOOGLE_API_KEY='your_key_goes_here'
+# GOOGLE_API_KEY='your_key_here'
 
 # Now, start the server!
 flask run
