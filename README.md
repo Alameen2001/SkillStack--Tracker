@@ -39,27 +39,26 @@ Here's how to get this running locally.
 
 ## Getting the Backend and Frontend Running
 ```bash
-# First, navigate into the backend folder
+# Intially, enter into the backend folder
 cd backend
 
 # Install all the Python tools it needs
 pip install -r requirements.txt
 
-# You'll need to create a .env file in this folder
-# and add your Google API key inside it like this:
-# GOOGLE_API_KEY='your_key_here'
+# You'll need to create a .env file in this (backend) folder and add Google API key 
+# GOOGLE_API_KEY='your_key_here' should like this
 
-# Now, start the server!
+# Now, run the server
 flask run
 **
 
 **
 ```bash
-# Second, navigate into the frontend folder (in a split new terminal)
+# Second, enter into the frontend folder 
 cd frontend
 
 # Install the necessary dependencies
 npm install
 
-# Now, start the server!
+# Now, run the server
 npm start
