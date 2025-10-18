@@ -84,6 +84,17 @@ def handle_single_skill(id):
         db.session.commit()
         return "", 204
 
+@app.route('/progress-distribution', methods=['GET'])
+def get_progress_distribution():
+    """Returns the distribution of skills by progress status."""
+    skills = Skill.query.all()
+    progress_counts = {}
+    for skill in skills:
+        progress = skill.progress or 'unknown'  # Handle None values
+        progress_counts[progress] = progress_counts.get(progress, 0) + 1
+
+    return jsonify(progress_counts)
+
 @app.route('/summarize-notes', methods=['POST'])
 def summarize_skill_notes():
     """Uses the Google Gemini API for free summarization."""
