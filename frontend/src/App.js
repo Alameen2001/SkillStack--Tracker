@@ -104,6 +104,7 @@ function App() {
       <div className="container">
         <header>
           <h1>SkillStack-Tracker</h1>
+          <p>A personal skill-building tracker for courses, tutorials, and certifications.</p>
         </header>
 
       <div className="card">
