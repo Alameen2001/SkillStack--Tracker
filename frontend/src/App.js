@@ -189,18 +189,32 @@ function App() {
       </div>
 
       <div className="card">
-        <h2>Skill Growth Insights</h2>
-        <div className="insight-stats">
-          <div className="stat-card">
-            <h4>Total Learning Hours</h4>
-            <span className="stat-value">{totalHours}</span>
-          </div>
-          <div className="stat-card">
-            <h4>Total Skills</h4>
-            <span className="stat-value">{skills.length}</span>
-          </div>
-        </div>
+        <h2>Dashboard</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', marginTop: '2rem' }}>
+          <div style={{ textAlign: 'center' }}>
+            <h3>Total Learning Hours</h3>
+            <ResponsiveContainer width={300} height={250}>
+              <BarChart data={[{ name: 'Total Hours', value: totalHours }]}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#34495e" />
+                <XAxis dataKey="name" stroke="#34495e" />
+                <YAxis stroke="#34495e" />
+                <Tooltip contentStyle={{ backgroundColor: '#34495e', color: '#ecf0f1', border: 'none' }} />
+                <Bar dataKey="value" fill={COLORS[0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <h3>Total Skills</h3>
+            <ResponsiveContainer width={300} height={250}>
+              <BarChart data={[{ name: 'Total Skills', value: skills.length }]}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#34495e" />
+                <XAxis dataKey="name" stroke="#34495e" />
+                <YAxis stroke="#34495e" />
+                <Tooltip contentStyle={{ backgroundColor: '#34495e', color: '#ecf0f1', border: 'none' }} />
+                <Bar dataKey="value" fill={COLORS[1]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
           <div style={{ textAlign: 'center' }}>
             <h3>Progress Distribution</h3>
             <ResponsiveContainer width={300} height={250}>

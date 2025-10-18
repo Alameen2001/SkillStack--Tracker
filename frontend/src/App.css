@@ -375,7 +375,7 @@ button {
 }
 
 .stat-value {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-text);
 }
